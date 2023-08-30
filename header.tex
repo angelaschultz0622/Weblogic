@@ -1,0 +1,37 @@
+\documentclass[a4paper]{article}
+\usepackage[a4paper,margin=2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{color}
+\usepackage{alltt}
+\usepackage{times}
+\setlength{\fboxsep}{0pt}
+\newcommand{\scitea}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\sciteb}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\newcommand{\scitec}[1]{\noindent{\ttfamily{\textcolor[rgb]{1.0, 0.0, 0.0}{#1}}}}
+\newcommand{\scited}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.5, 0.5}{#1}}}}
+\newcommand{\sciteg}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.5, 0.0}{#1}}}}
+\newcommand{\scitei}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.0, 0.5}{#1}}}}
+\newcommand{\scitej}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.5, 0.5, 0.5}{#1}}}}
+\newcommand{\scitep}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{\colorbox[rgb]{1.0, 1.0, 0.0}{#1}}}}}
+\newcommand{\sciteq}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{\colorbox[rgb]{1.0, 0.9, 0.0}{#1}}}}}
+\newcommand{\sciteib}[1]{\noindent{\ttfamily{\textcolor[rgb]{0.0, 0.0, 0.0}{#1}}}}
+\begin{document}
+
+
+
+\noindent
+\small{
+\scitep{$<$\%$@$}\sciteq{ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" }\scitep{\%$>$}\scitea{} \\
+\scitep{$<$\%$@$}\sciteq{page contentType="text/html" pageEncoding="UTF-8"}\scitep{\%$>$}\scitea{} \\
+\scitej{$<$!-- This is set by a filter!. --$>$}\scitea{} \\
+\scitec{$<$c:if test="\$\{not empty auctionUser\}"$>$}\scitea{} \\
+\scitea{{\hspace*{1em}} }\sciteb{$<$div}\scitei{ }\scited{style}\scitei{=}\sciteg{"text-align: right"}\sciteb{$>$}\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} User: }\sciteb{$<$b$>$}\scitea{\$\{auctionUser\}}\sciteb{$<$/b$>$}\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }\scitec{$<$c:url value="/LogoutServlet" var="URLLogout"/$>$}\scitea{} \\
+\scitea{{\hspace*{1em}}{\hspace*{1em}}{\hspace*{1em}} }\sciteb{$<$a}\scitei{ }\scited{href}\scitei{=}\sciteg{"\$\{URLLogout\}"}\sciteb{$>$}\scitea{LOGOUT}\sciteb{$<$/a$>$}\scitea{} \\
+\scitea{{\hspace*{1em}} }\sciteb{$<$/div$>$}\scitea{} \\
+\scitec{$<$/c:if$>$}\scitea{} \\
+\scitea{}
+} %end small
+
+\end{document}
